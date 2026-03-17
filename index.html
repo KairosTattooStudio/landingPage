@@ -114,6 +114,43 @@
       background: var(--line-gray);
       margin-top: 2rem;
     }
+    .hero-contact {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .hero-contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-dark);
+      text-decoration: none;
+      font-size: 0.78rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      font-weight: 400;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+      transition: border-color 0.2s, opacity 0.2s;
+    }
+    .hero-contact a:hover {
+      border-bottom-color: var(--line-gray);
+      opacity: 0.7;
+    }
+    .hero-contact .icon {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+      opacity: 0.75;
+    }
+    .hero-contact .sep {
+      width: 1px;
+      height: 14px;
+      background: var(--line-gray);
+    }
 
     /* Sections */
     section {
@@ -261,6 +298,8 @@
       }
       header { padding: 5rem 1.5rem 3rem; }
       .hero-image { max-width: 260px; }
+      .hero-contact { gap: 1.25rem; }
+      .hero-contact .sep { display: none; }
       section { padding: 3.5rem 1.5rem; }
       .gallery-grid { gap: 1rem; }
       .gallery-item { flex: 0 0 calc(50% - 0.5rem); width: calc(50% - 0.5rem); }
@@ -287,6 +326,23 @@
     <h1>KAIROS</h1>
     <p class="subtitle">Tattoo Studio</p>
     <div class="divider"></div>
+
+    <div class="hero-contact">
+      <a href="https://wa.me/17202759328?text=Hi%2C%20I%27m%20interested%20in%20a%20custom%20tattoo%20at%20Kairos%20Studio.%0AHere%20are%20the%20details%3A%0A%0AIdea%3A%0ASize%3A%0APlacement%3A" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        WhatsApp
+      </a>
+      <span class="sep"></span>
+      <a href="https://www.instagram.com/tattooihselh/" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        Instagram
+      </a>
+      <span class="sep"></span>
+      <a href="tel:+17202759328">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.27 16z"/></svg>
+        (720) 275-9328
+      </a>
+    </div>
   </header>
 
   <section id="about">
@@ -304,7 +360,7 @@
         Timeless art. Precise execution. No shortcuts.
       </p>
       <p style="margin-top: 1rem;">
-        <strong>Ihsel Hinojosa</strong> is part of the resident artist team, bringing his vision and technique to every piece.
+        <strong>Ihsel Hinojosa</strong> is part of the resident artist team, bringing her vision and technique to every piece.
       </p>
     </div>
   </section>
